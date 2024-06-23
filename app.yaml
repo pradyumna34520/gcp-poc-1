@@ -1,0 +1,21 @@
+runtime: python310
+
+handlers:
+  - url: /static
+    static_dir: static
+
+  - url: /.*
+    script: auto
+
+env_variables:
+  # Environment variables
+  PROJECT_ID: "braided-shift-418211"
+  DATASET_ID: "creditcard"
+  TABLE_ID: "customerdata"
+
+# Optional: Uncomment the following to specify a service account to use for authentication
+# service_account: your-service-account@example.iam.gserviceaccount.com
+
+instance_class: F2  # Choose appropriate instance class
+
+
