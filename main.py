@@ -1,11 +1,11 @@
 from google.cloud import bigquery
 
 # Replace with your project ID
-project_id = "braided-shift-418211"
+project_id = "fleet-geode-425017-g6"
 
 # Define the BigQuery dataset and table names
-dataset_id = "creditcard"
-table_id = "customerdata"
+dataset_id = "plsDontDelete"
+table_id = "customer_data"
 
 # Function to insert data into BigQuery table
 def insert_data_to_bigquery(data):
